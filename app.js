@@ -1,4 +1,4 @@
-const MODEL="OBLITERATUS/gemma-4-E4B-it-OBLITERATED:featherless-ai";
+const MODEL="openai/gpt-oss-20b:cheapest";
 const $=id=>document.getElementById(id),messagesEl=$("messages"),welcomeEl=$("welcome"),input=$("promptInput");
 let endpoint=localStorage.getItem("mchawe_worker_url")||"",messages=[],history=JSON.parse(localStorage.getItem("mchawe_history")||"[]"),busy=false;
 function setNotice(t,e=false){$("notice").textContent=t;$("notice").style.color=e?"#ff9c9c":"#8ba4c2"}
